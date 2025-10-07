@@ -1,0 +1,13 @@
+html{
+    background-color: rgb(76, 73, 255);
+    font-kerning: auto;
+    font-family: 'Roboto', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: show;
+}

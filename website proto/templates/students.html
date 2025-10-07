@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>All students</h2>
+
+  <form class="search-form" method="get" action="{{ url_for('students_page') }}">
+    <input name="q" placeholder="Search students by name" value="{{ query|default('') }}">
+    <button type="submit">Search</button>
+    {% if query %}<p class="small">Showing results for "{{ query }}"</p>{% endif %}
+  </form>
+
+  <div class="students-grid">
+    {% for student in students %}
+      <div class="student-card">
+        <div class="avatar whanau-{{ student.whanau|lower }}">{{ student.initials }}</div>
+        <h3 class="student-name">{{ student.name }}</h3>
+        <span class="whanau-badge whanau-{{ student.whanau|lower }}">{{ student.whanau }}</span>
+        <p class="bio">{{ student.bio }}</p>
+        <a class="profile-link" href="{{ url_for('profile', name=student.name) }}">View profile</a>
+      </div>
+    {% else %}
+      <p>No students found.</p>
+    {% endfor %}
+  </div>
+{% endblock %}

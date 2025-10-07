@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mahurangi Prototype</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <!-- No logo image for prototype — text placeholder -->
+      <div class="logo-placeholder">Mahurangi<br><span class="small">College</span></div>
+    </div>
+
+    <nav class="nav">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('students_page') }}">Students</a>
+      <a href="{{ url_for('whanaus') }}">Whānau</a>
+      <button class="teacher-btn">Teacher login</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    &copy; Mahurangi Prototype
+  </footer>
+</body>
+</html>
