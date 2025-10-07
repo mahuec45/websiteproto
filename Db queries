@@ -1,5 +1,0 @@
--- my database: c:\Users\OEM\Downloads\My VS Code Stuff\Untitled-1.db
-
-SELECT city FROM table1
-WHERE population = 10
-ORDER BY `city` ASC;
