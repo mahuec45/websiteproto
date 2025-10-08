@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 # --- Simple in-memory student data (no images) ---
 students = [
-    {"name": "Taakua Taake", "whanau": "Whero",   "initials": "TT", "bio": "Student from Kiribati."},
-    {"name": "Louise Treadwell", "whanau": "Kowhai", "initials": "LT", "bio": "Prefect and sports leader."},
-    {"name": "Leanne Sayers", "whanau": "Kakariki", "initials": "LS", "bio": "Interested in music and art."}
+    {"name": "Taakua Taake", "whanau": "Green",   "initials": "TT", "bio": "Student from Kiribati."},
+    {"name": "Louise Treadwell", "whanau": "Yellow", "initials": "LT", "bio": "Prefect and sports leader."},
+    {"name": "Leanne Sayers", "whanau": "Red", "initials": "LS", "bio": "Interested in music and art."}
 ]
 
 # Helper: find student by exact name
