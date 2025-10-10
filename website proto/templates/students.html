@@ -14,7 +14,7 @@
         <div class="avatar whanau-{{ student.whanau|lower }}">{{ student.initials }}</div>
         <h3 class="student-name">{{ student.name }}</h3>
         <span class="whanau-badge whanau-{{ student.whanau|lower }}">{{ student.whanau }}</span>
-        <p class="bio">{{ student.bio }}</p>
+        <p class="bio">{{ student.info }}</p>
         <a class="profile-link" href="{{ url_for('profile', name=student.name) }}">View profile</a>
       </div>
     {% else %}

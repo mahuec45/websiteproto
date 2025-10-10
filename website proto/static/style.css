@@ -1,7 +1,7 @@
 :root{
   --bg:#ffffff; --text:#222;
   --muted:#666;
-  --whero:#d32f2f; --kowhai:#fbc02d; --kakariki:#43a047; --kahurangi:#1e88e5; --pango:#111111;
+  --red:#d32f2f; --yellow:#fbc02d; --green:#43a047; --blue:#1e88e5; --purple:#8500be;
 }
 
 *{box-sizing:border-box}
@@ -39,17 +39,38 @@ body{
 }
 .large-avatar{ width:120px; height:120px; font-size:36px; margin-bottom:10px }
 
-.whanau-badge{ display:inline-block; padding:4px 8px; border-radius:8px; color:white; margin-bottom:8px }
-.bio{ font-size:14px; color:var(--muted) }
+.whanau-badge{ display:inline-block; padding:4px 8px; border-radius:8px; color:white; margin-bottom:8px; display:flex; justify-content: center; align-items:center }
+.info{ font-size:14px; color:var(--muted) }
 .profile{ display:flex; gap:24px; align-items:flex-start }
 .profile-left{ min-width:220px; text-align:center }
 
-.whanau-whero{ background:var(--whero) }
-.whanau-kowhai{ background:var(--kowhai); color:#111 }
-.whanau-kakariki{ background:var(--kakariki) }
-.whanau-kahurangi{ background:var(--kahurangi) }
-.whanau-pango{ background:var(--pango) }
+.whanau-red{ background:var(--red) }
+.whanau-yellow{ background:var(--yellow); color:#111111 }
+.whanau-green{ background:var(--green) }
+.whanau-blue{ background:var(--blue) }
+.whanau-purple{ background:var(--purple) }
 
 .whanau-pill{ padding:8px 14px; border-radius:12px; color:white; margin-right:8px }
 
 .site-footer{ padding:18px 24px; border-top:1px solid #eee; margin-top:32px; text-align:center; color:var(--muted) }
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px auto; /* centers horizontally */
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* spacing between circles */
+}
