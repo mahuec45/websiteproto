@@ -1,7 +1,10 @@
 {% extends "base.html" %}
+
 {% block content %}
-  <h2>Whānau groups</h2>
+  <h2>Whānau Groups</h2>
   <p>Colour-coded groups (prototype):</p>
+
+  <!-- Whānau colour labels -->
   <div class="whanau-row">
     <span class="whanau-pill whanau-red">Red</span>
     <span class="whanau-pill whanau-yellow">Yellow</span>
@@ -9,17 +12,62 @@
     <span class="whanau-pill whanau-blue">Blue</span>
     <span class="whanau-pill whanau-purple">Purple</span>
   </div>
-  <br>
-  <h1>Purple</h1>
-  <div class="whanau-row" {align=center style="justify-content: center;"}></div>
-    <div class="avatar whanau-purple">AB</div>
-    <div class="avatar whanau-purple">CD</div>
-    <div class="avatar whanau-purple">EF</div>
-    <div class="avatar whanau-purple">GH</div>
-    <div class="avatar whanau-purple">IJ</div>
-    <div class="avatar whanau-purple">KL</div>
-    <div class="avatar whanau-purple">MN</div>
-    <div class="avatar whanau-purple">OP</div>
-    <div class="avatar whanau-purple">QR</div>
-    <div class="avatar whanau-purple">ST</div>
+
+  <hr>
+
+  <!-- Red Whānau -->
+  <h1 class="whanau-title whanau-red">Red Whānau</h1>
+  
+  <div class="whanau-row">
+    <div class="avatar whanau-red">AB</div>
+    <div class="avatar whanau-red">CD</div>
+    <div class="avatar whanau-red">EF</div>
+    <div class="avatar whanau-red">GH</div>
+    <div class="avatar whanau-red">IJ</div>
+  </div>
+
+  <!-- Yellow Whānau -->
+  <h1 class="whanau-title whanau-yellow">Yellow Whānau</h1>
+  
+  <div class="whanau-row">
+    <div class="avatar whanau-yellow">KL</div>
+    <div class="avatar whanau-yellow">MN</div>
+    <div class="avatar whanau-yellow">OP</div>
+    <div class="avatar whanau-yellow">QR</div>
+    <div class="avatar whanau-yellow">ST</div>
+  </div>
+
+  <!-- Green Whānau -->
+  <h1 class="whanau-title whanau-green">Green Whānau</h1>
+  
+  <div class="whanau-row">
+    <div class="avatar whanau-green">UV</div>
+    <div class="avatar whanau-green">WX</div>
+    <div class="avatar whanau-green">YZ</div>
+    <div class="avatar whanau-green">AA</div>
+    <div class="avatar whanau-green">BB</div>
+  </div>
+
+  <!-- Blue Whānau -->
+  <h1 class="whanau-title whanau-blue">Blue Whānau</h1>
+  
+  <div class="whanau-row">
+    <div class="avatar whanau-blue">CC</div>
+    <div class="avatar whanau-blue">DD</div>
+    <div class="avatar whanau-blue">EE</div>
+    <div class="avatar whanau-blue">FF</div>
+    <div class="avatar whanau-blue">GG</div>
+  </div>
+
+  <!-- Purple Whānau -->
+  <h1 class="whanau-title whanau-purple">Purple Whānau</h1>
+  
+  <div class="whanau-row">
+    <div class="avatar whanau-purple">HH</div>
+    <div class="avatar whanau-purple">II</div>
+    <div class="avatar whanau-purple">JJ</div>
+    <div class="avatar whanau-purple">KK</div>
+    <div class="avatar whanau-purple">LL</div>
+  </div>
 {% endblock %}
+
