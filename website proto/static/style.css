@@ -1,7 +1,7 @@
 :root{
   --bg:#ffffff; --text:#222;
   --muted:#666;
-  --red:#d32f2f; --yellow:#fbc02d; --green:#43a047; --blue:#1e88e5; --purple:#8500be;
+  --red:#d32f2f; --yellow:#fbc02d; --green:#43a047; --blue:#1e88e5; --purple:#8500be; --orange:#ff6200;
 }
 
 *{box-sizing:border-box}

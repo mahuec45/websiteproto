@@ -4,9 +4,13 @@ app = Flask(__name__)
 
 # --- Simple in-memory student data (no images) ---
 students = [
-    {"name": "Taakua Taake", "whanau": "Green whanau",   "initials": "TT", "bio": "From Kiribati.", "info": "Kiribati."},
-    {"name": "Atauea Airam", "whanau": "Yellow whanau", "initials": "AA", "bio": "From Kiribati.", },
-    {"name": "Tebiri Teun", "whanau": "Red whanau", "initials": "TT", "bio": "From Kiribati.", }
+    {"name": "Taakua Taake", "whanau": "Green whanau",   "initials": "TT", "bio": "From Kiribati.", "info": "Kiribati", "pronunciation": "Tah-ah-koo-ah Tah-keh"},
+    {"name": "Atauea Airam", "whanau": "Yellow whanau", "initials": "AA", "bio": "From Samoa.","info": "Samoan", "pronunciation": "Ah-tah-oo-where Eye-rahm"},
+    {"name": "Tebiri Teun", "whanau": "Red whanau", "initials": "TT", "bio": "From Kiribati.", "info": "Kiribati", "pronunciation": "Teh-bih-ree Teh-oo-un"},
+    {"name": "Tiua Kanipule-Eritai", "whanau": "Blue whanau", "initials": "TK", "bio": "From Tonga.", "info": "Tongan", "pronunciation": "Tee-wah Kah-neh-pulley Eh-rih-shy"},
+    {"name": "Tulua Hurbert", "whanau": "Purple whanau", "initials": "TH", "bio": "From Tuvalu.", "info": "Tuvaluan", "pronunciation": "Too-loo-ah Her-bert"},
+    {"name": "Namakei Obaria", "whanau": "Green whanau", "initials": "NO", "bio": "From Kiribati.", "info": "Kiribati", "pronunciation": "Nah-mah-kay Oh-bah-ree-ah"},
+    {"name": "Tipasa Manumalo", "whanau": "Purple whanau", "initials": "TM", "bio": "From Samoa.", "info": "Samoan", "pronunciation": "Tee-pah-sah Mah-noo-mah-lo"},
 ]
 
 # Helper: find student by exact name
@@ -45,3 +49,6 @@ def whanaus():
 if __name__ == '__main__':
     # Run dev server. Visit http://127.0.0.1:5000
     app.run(debug=True)
+
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.jinja_env.auto_reload = True
