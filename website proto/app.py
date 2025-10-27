@@ -55,16 +55,16 @@ def profile(name):
         return render_template('404.html'), 404
     return render_template('profile.html', student=student)
 
+# Simple whanaus page
 @app.route('/whanaus')
 def whanaus():
     # For the prototype this is static content rendered from a template
     return render_template('whanaus.html')
-
 if __name__ == '__main__':
     # Run dev server. Visit http://127.0.0.1:5000
     app.run(debug=True)
-
-# 6 7 6 7 6 7 6 7 6 7 
-
+#\/\/\/\/\/
+# LINE 67 <<<<<
+#^^^^^^^^
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.jinja_env.auto_reload = True
