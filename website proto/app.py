@@ -19,7 +19,7 @@ students = [
     {"name": "Tahere Hemana-Walker", "whanau": "Red whanau", "initials": "TH", "bio": "From New Zealand.", "info": "Māori", "pronunciation": "Tah-heh-reh He-mah-nah Walker"},
     {"name": "Makaiah Davis", "whanau": "Yellow whanau", "initials": "MD", "bio": "From New Zealand.", "info": "Māori", "pronunciation": "Mah-kai-ah Davis"},
     {"name": "Waikeringa Karaitiana", "whanau": "Green whanau", "initials": "WK", "bio": "From New Zealand.", "info": "Māori", "pronunciation": "Why-keh-ring-ah Kah-rye-tee-ahn-ah"},
-    {"name": "Traoi Vaitemwa", "whanau": "Purple whanau", "initials": "TV", "bio": "From Tuvalu.", "info": "Tuvaluan", "pronunciation": "Teh-roy vai-teh-mwah"},
+    {"name": "Teraoi Vaitemwa", "whanau": "Purple whanau", "initials": "TV", "bio": "From Tuvalu.", "info": "Tuvaluan", "pronunciation": "Teh-roy vai-teh-mwah"},
     {"name": "Eneriata Kotua", "whanau": "Green whanau", "initials": "EK", "bio": "From Tuvalu.", "info": "Tuvaluan", "pronunciation": "Eh-ner-ree-ah-tah Koh-too-ah"},
     {"name": "Hamon Robert", "whanau": "Red whanau", "initials": "HR", "bio": "From Kiribati.", "info": "Kiribati", "pronunciation": "Ah-mon Robert"},
     {"name": "Riciaban Ah Lee", "whanau": "Yellow whanau", "initials": "RA", "bio": "From Fiji.", "info": "Fijian", "pronunciation": "Wri-sea-ah-bahn Ah Lee"},
