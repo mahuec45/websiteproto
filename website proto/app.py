@@ -55,7 +55,6 @@ def profile(name):
         return render_template('404.html'), 404
     return render_template('profile.html', student=student)
 
-# Simple whanaus page
 @app.route('/whanaus')
 def whanaus():
     # For the prototype this is static content rendered from a template
