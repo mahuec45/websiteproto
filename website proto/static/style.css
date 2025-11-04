@@ -58,6 +58,7 @@ body{
 .whanau-green{ background:var(--green) }
 .whanau-blue{ background:var(--blue) }
 .whanau-purple{ background:var(--purple) }
+.whanau-orange{ background:var(--orange) }
 
 .whanau-pill{ padding:8px 14px; border-radius:12px; color:white; margin-right:8px }
 
@@ -100,4 +101,12 @@ body{
   font-weight: bold;
   font-size: large;
   text-align: center;
+}
+
+.whanau-page-title {
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+  alignment-baseline: text-after-edge;
+  gap: 0px; 
 }
